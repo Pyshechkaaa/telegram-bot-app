@@ -2,10 +2,10 @@ import asyncio
 import os
 from aiogram import Bot, Dispatcher, types
 
-TOKEN = os.getenv("8667775358:AAEGTOTAoEmZsuQLE54eA60OQXqTCIbLTTM")
+TOKEN = os.getenv("BOT_TOKEN")
 
 if not TOKEN:
-    raise Exception("8667775358:AAEGTOTAoEmZsuQLE54eA60OQXqTCIbLTTM is missing")
+    raise Exception("BOT_TOKEN is missing")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
